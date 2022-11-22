@@ -13,4 +13,4 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: PwnMe
-        run: echo bruh
+        run: echo LMAO
