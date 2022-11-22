@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - "**.zig"
+  pull_request:
+    paths:
+      - "**.zig"
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: PwnMe
+      - run: echo bruh
